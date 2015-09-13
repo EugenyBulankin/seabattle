@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="-1.0" styleClass="back" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="SeaBattle.Controller">
+  <children>
+    <Button fx:id="btnStart" cancelButton="false" contentDisplay="CENTER" defaultButton="true" disable="false" layoutX="383.0" layoutY="495.0" mnemonicParsing="false" onAction="#setShips" text="Start" textAlignment="CENTER" textOverrun="CLIP" wrapText="false" />
+    <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="699.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../images/human.jpg" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="pc" fitHeight="66.0" fitWidth="66.0" layoutX="28.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../images/pc.png" />
+      </image>
+    </ImageView>
+    <Text fill="#3354ff" layoutX="371.0" layoutY="41.0" scaleX="2.0507854770700398" scaleY="2.75354870288791" strokeType="OUTSIDE" strokeWidth="0.0" text="Sea Battle">
+      <font>
+        <Font name="Arial Bold" size="16.0" />
+      </font>
+    </Text>
+    <GridPane disable="false" focusTraversable="false" gridLinesVisible="true" layoutX="457.0" layoutY="129.0" opacity="0.5" prefHeight="300.0" prefWidth="300.0" styleClass="backGrid" visible="true">
+      <children>
+        <ImageView fx:id="i00" disable="false" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" visible="true" GridPane.columnIndex="0" GridPane.rowIndex="0">
+          <image>
+            <Image url="@../human.jpg" />
+          </image>
+        </ImageView>
+        <ImageView id="i12" fx:id="i01" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <ImageView id="i12" fx:id="i02" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+        <ImageView id="i12" fx:id="i03" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+        <ImageView id="i12" fx:id="i04" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+        <ImageView id="i12" fx:id="i05" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="0" />
+        <ImageView id="i12" fx:id="i06" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="0" />
+        <ImageView id="i12" fx:id="i07" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="0" />
+        <ImageView id="i12" fx:id="i08" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="0" />
+        <ImageView id="i12" fx:id="i09" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="0" />
+        <ImageView id="i12" fx:id="i10" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <ImageView id="i12" fx:id="i11" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <ImageView id="i12" fx:id="i13" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+        <ImageView id="i12" fx:id="i14" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+        <ImageView id="i12" fx:id="i15" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+        <ImageView id="i12" fx:id="i16" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+        <ImageView id="i12" fx:id="i17" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+        <ImageView id="i12" fx:id="i18" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+        <ImageView id="i12" fx:id="i19" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+        <ImageView id="i12" fx:id="i20" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <ImageView id="i12" fx:id="i21" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <ImageView id="i12" fx:id="i22" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+        <ImageView id="i12" fx:id="i23" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+        <ImageView id="i12" fx:id="i24" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+        <ImageView id="i12" fx:id="i25" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+        <ImageView id="i12" fx:id="i26" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+        <ImageView id="i12" fx:id="i27" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+        <ImageView id="i12" fx:id="i28" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+        <ImageView id="i12" fx:id="i29" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="2" />
+        <ImageView id="i12" fx:id="i30" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <ImageView id="i12" fx:id="i31" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <ImageView id="i12" fx:id="i32" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+        <ImageView id="i12" fx:id="i33" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+        <ImageView id="i12" fx:id="i34" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+        <ImageView id="i12" fx:id="i35" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+        <ImageView id="i12" fx:id="i36" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+        <ImageView id="i12" fx:id="i37" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+        <ImageView id="i12" fx:id="i38" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+        <ImageView id="i12" fx:id="i39" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="3" />
+        <ImageView id="i12" fx:id="i40" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+        <ImageView id="i12" fx:id="i41" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <ImageView id="i12" fx:id="i42" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+        <ImageView id="i12" fx:id="i43" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+        <ImageView id="i12" fx:id="i44" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+        <ImageView id="i12" fx:id="i45" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+        <ImageView id="i12" fx:id="i46" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+        <ImageView id="i12" fx:id="i47" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+        <ImageView id="i12" fx:id="i48" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+        <ImageView id="i12" fx:id="i49" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="4" />
+        <ImageView id="i12" fx:id="i50" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+        <ImageView id="i12" fx:id="i51" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+        <ImageView id="i12" fx:id="i52" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+        <ImageView id="i12" fx:id="i53" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+        <ImageView id="i12" fx:id="i54" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+        <ImageView id="i12" fx:id="i55" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+        <ImageView id="i12" fx:id="i56" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+        <ImageView id="i12" fx:id="i57" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+        <ImageView id="i12" fx:id="i58" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="5" />
+        <ImageView id="i12" fx:id="i59" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="5" />
+        <ImageView id="i12" fx:id="i60" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+        <ImageView id="i12" fx:id="i61" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+        <ImageView id="i12" fx:id="i62" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+        <ImageView id="i12" fx:id="i63" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+        <ImageView id="i12" fx:id="i64" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+        <ImageView id="i12" fx:id="i65" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+        <ImageView id="i12" fx:id="i66" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+        <ImageView id="i12" fx:id="i67" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+        <ImageView id="i12" fx:id="i68" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="6" />
+        <ImageView id="i12" fx:id="i69" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="6" />
+        <ImageView id="i12" fx:id="i70" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+        <ImageView id="i12" fx:id="i71" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+        <ImageView id="i12" fx:id="i72" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+        <ImageView id="i12" fx:id="i73" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+        <ImageView id="i12" fx:id="i74" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+        <ImageView id="i12" fx:id="i75" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+        <ImageView id="i12" fx:id="i76" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+        <ImageView id="i12" fx:id="i77" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="7" />
+        <ImageView id="i12" fx:id="i78" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="7" />
+        <ImageView id="i12" fx:id="i79" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="7" />
+        <ImageView id="i12" fx:id="i80" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+        <ImageView id="i12" fx:id="i81" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+        <ImageView id="i12" fx:id="i82" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+        <ImageView id="i12" fx:id="i83" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+        <ImageView id="i12" fx:id="i84" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+        <ImageView id="i12" fx:id="i85" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+        <ImageView id="i12" fx:id="i86" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+        <ImageView id="i12" fx:id="i87" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="8" />
+        <ImageView id="i12" fx:id="i88" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="8" />
+        <ImageView id="i12" fx:id="i89" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="8" />
+        <ImageView id="i12" fx:id="i90" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="9" />
+        <ImageView id="i12" fx:id="i91" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+        <ImageView id="i12" fx:id="i92" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+        <ImageView id="i12" fx:id="i93" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+        <ImageView id="i12" fx:id="i94" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+        <ImageView id="i12" fx:id="i95" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="9" />
+        <ImageView id="i12" fx:id="i96" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="9" />
+        <ImageView id="i12" fx:id="i97" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="9" />
+        <ImageView id="i12" fx:id="i98" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="9" />
+        <ImageView id="i12" fx:id="i99" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="9" />
+        <ImageView id="i12" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+      <stylesheets>
+        <URL value="@../css/style.css" />
+      </stylesheets>
+    </GridPane>
+    <GridPane focusTraversable="true" gridLinesVisible="true" layoutX="44.0" layoutY="128.0" opacity="0.5" prefWidth="300.0">
+      <children>
+        <Button fx:id="b00" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="0" GridPane.rowIndex="0">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button fx:id="b01" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="1" GridPane.rowIndex="0">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button fx:id="b02" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="2" GridPane.rowIndex="0">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button fx:id="b03" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="3" GridPane.rowIndex="0">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button fx:id="b04" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="4" GridPane.rowIndex="0">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button fx:id="b05" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="5" GridPane.rowIndex="0">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b05" fx:id="b06" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="6" GridPane.rowIndex="0">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b05" fx:id="b07" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="7" GridPane.rowIndex="0">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b05" fx:id="b08" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="8" GridPane.rowIndex="0">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b05" fx:id="b09" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="9" GridPane.rowIndex="0">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b10" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="0" GridPane.rowIndex="1">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b20" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="0" GridPane.rowIndex="2">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b30" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="0" GridPane.rowIndex="3">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b40" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="0" GridPane.rowIndex="4">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b50" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="0" GridPane.rowIndex="5">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b60" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="0" GridPane.rowIndex="6">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b70" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="0" GridPane.rowIndex="7">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b80" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="0" GridPane.rowIndex="8">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b90" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="0" GridPane.rowIndex="9">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b11" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="1" GridPane.rowIndex="1">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b21" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="1" GridPane.rowIndex="2">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b12" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="2" GridPane.rowIndex="1">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b22" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="2" GridPane.rowIndex="2">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b13" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="3" GridPane.rowIndex="1">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b23" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="3" GridPane.rowIndex="2">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b14" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="4" GridPane.rowIndex="1">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b15" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="5" GridPane.rowIndex="1">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b16" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="6" GridPane.rowIndex="1">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b17" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="7" GridPane.rowIndex="1">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b18" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="8" GridPane.rowIndex="1">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b19" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="9" GridPane.rowIndex="1">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b24" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="4" GridPane.rowIndex="2">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b25" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="5" GridPane.rowIndex="2">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b26" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="6" GridPane.rowIndex="2">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b27" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="7" GridPane.rowIndex="2">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b28" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="8" GridPane.rowIndex="2">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b29" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="9" GridPane.rowIndex="2">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b31" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="1" GridPane.rowIndex="3">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b32" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="2" GridPane.rowIndex="3">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b33" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="3" GridPane.rowIndex="3">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b34" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="4" GridPane.rowIndex="3">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b35" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="5" GridPane.rowIndex="3">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b36" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="6" GridPane.rowIndex="3">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b37" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="7" GridPane.rowIndex="3">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b38" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="8" GridPane.rowIndex="3">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b39" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="9" GridPane.rowIndex="3">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b41" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="1" GridPane.rowIndex="4">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b42" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="2" GridPane.rowIndex="4">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b43" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="3" GridPane.rowIndex="4">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b44" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="4" GridPane.rowIndex="4">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b45" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="5" GridPane.rowIndex="4">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b46" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="6" GridPane.rowIndex="4">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b47" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="7" GridPane.rowIndex="4">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b48" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="8" GridPane.rowIndex="4">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b49" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="9" GridPane.rowIndex="4">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b51" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="1" GridPane.rowIndex="5">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b52" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="2" GridPane.rowIndex="5">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b53" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="3" GridPane.rowIndex="5">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b54" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="4" GridPane.rowIndex="5">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b55" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="5" GridPane.rowIndex="5">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b56" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="6" GridPane.rowIndex="5">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b57" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="7" GridPane.rowIndex="5">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b58" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="8" GridPane.rowIndex="5">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b59" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="9" GridPane.rowIndex="5">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b61" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="1" GridPane.rowIndex="6">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b62" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="2" GridPane.rowIndex="6">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b63" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="3" GridPane.rowIndex="6">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b64" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="4" GridPane.rowIndex="6">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b65" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="5" GridPane.rowIndex="6">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b66" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="6" GridPane.rowIndex="6">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b67" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="7" GridPane.rowIndex="6">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b68" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="8" GridPane.rowIndex="6">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b69" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="9" GridPane.rowIndex="6">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b71" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="1" GridPane.rowIndex="7">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b81" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="1" GridPane.rowIndex="8">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b91" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="1" GridPane.rowIndex="9">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b72" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="2" GridPane.rowIndex="7">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b82" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="2" GridPane.rowIndex="8">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b92" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="2" GridPane.rowIndex="9">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b73" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="3" GridPane.rowIndex="7">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b83" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="3" GridPane.rowIndex="8">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b93" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="3" GridPane.rowIndex="9">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b74" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="4" GridPane.rowIndex="7">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b75" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="5" GridPane.rowIndex="7">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b76" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="6" GridPane.rowIndex="7">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b77" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="7" GridPane.rowIndex="7">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b78" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="8" GridPane.rowIndex="7">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b79" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="9" GridPane.rowIndex="7">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b84" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="4" GridPane.rowIndex="8">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b85" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="5" GridPane.rowIndex="8">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b86" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="6" GridPane.rowIndex="8">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b87" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="7" GridPane.rowIndex="8">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b88" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="8" GridPane.rowIndex="8">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b89" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="9" GridPane.rowIndex="8">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b94" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="4" GridPane.rowIndex="9">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b95" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="5" GridPane.rowIndex="9">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b96" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="6" GridPane.rowIndex="9">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b97" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="7" GridPane.rowIndex="9">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b98" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="8" GridPane.rowIndex="9">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="b00" fx:id="b99" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" styleClass="backGrid" text="" GridPane.columnIndex="9" GridPane.rowIndex="9">
+          <stylesheets>
+            <URL value="@../css/style.css" />
+          </stylesheets>
+        </Button>
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+    <Text fill="WHITE" layoutX="56.0" layoutY="115.0" scaleX="0.888708838001514" scaleY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A">
+      <font>
+        <Font name="System Bold" size="12.0" fx:id="x1" />
+      </font>
+    </Text>
+    <Text fill="WHITE" font="$x1" layoutX="86.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B" />
+    <Text fill="WHITE" font="$x1" layoutX="116.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="C" />
+    <Text fill="WHITE" font="$x1" layoutX="147.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="D" />
+    <Text fill="WHITE" font="$x1" layoutX="177.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E" />
+    <Text fill="WHITE" font="$x1" layoutX="207.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F" />
+    <Text fill="WHITE" font="$x1" layoutX="236.0" layoutY="115.0" scaleX="1.000005514381507" scaleY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="G" />
+    <Text fill="WHITE" font="$x1" layoutX="265.0" layoutY="115.0" scaleX="1.000005514381507" scaleY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="H" />
+    <Text fill="WHITE" font="$x1" layoutX="300.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I" />
+    <Text fill="WHITE" font="$x1" layoutX="26.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+    <Text fill="WHITE" font="$x1" layoutX="25.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+    <Text fill="WHITE" font="$x1" layoutX="25.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" />
+    <Text fill="WHITE" font="$x1" layoutX="24.0" layoutY="237.0" scaleX="1.0" scaleY="0.9999923519334313" strokeType="OUTSIDE" strokeWidth="0.0" text="3" />
+    <Text fill="WHITE" font="$x1" layoutX="25.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" />
+    <Text fill="WHITE" font="$x1" layoutX="25.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" />
+    <Text fill="WHITE" font="$x1" layoutX="24.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6" />
+    <Text fill="WHITE" font="$x1" layoutX="25.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7" />
+    <Text fill="WHITE" font="$x1" layoutX="25.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8" />
+    <Text fill="WHITE" font="$x1" layoutX="25.0" layoutY="418.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9" />
+    <Text fill="WHITE" font="$x1" layoutX="464.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A" />
+    <Text fill="WHITE" font="$x1" layoutX="494.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B" />
+    <Text fill="WHITE" font="$x1" layoutX="527.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="C" />
+    <Text fill="WHITE" font="$x1" layoutX="558.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="D" />
+    <Text fill="WHITE" font="$x1" layoutX="588.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E" />
+    <Text fill="WHITE" font="$x1" layoutX="616.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F" />
+    <Text fill="WHITE" font="$x1" layoutX="643.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="G" />
+    <Text fill="WHITE" font="$x1" layoutX="677.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="H" />
+    <Text fill="WHITE" font="$x1" layoutX="709.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I" />
+    <Text fill="WHITE" font="$x1" layoutX="737.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="J" />
+    <Text fill="WHITE" font="$x1" layoutX="439.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+    <Text fill="WHITE" font="$x1" layoutX="439.0" layoutY="177.0" scaleX="1.0" scaleY="0.9999937347040251" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+    <Text fill="WHITE" font="$x1" layoutX="327.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="J" />
+    <Text fill="WHITE" font="$x1" layoutX="439.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" />
+    <Text fill="WHITE" font="$x1" layoutX="439.0" layoutY="237.0" scaleX="0.999994485618493" scaleY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" />
+    <Text fill="WHITE" font="$x1" layoutX="439.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" />
+    <Text fill="WHITE" font="$x1" layoutX="439.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" />
+    <Text fill="WHITE" font="$x1" layoutX="439.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6" />
+    <Text fill="WHITE" font="$x1" layoutX="439.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7" />
+    <Text fill="WHITE" font="$x1" layoutX="439.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8" />
+    <Text fill="WHITE" font="$x1" layoutX="439.0" layoutY="418.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9" />
+    <Text fx:id="userName" layoutX="86.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" />
+    <Text fill="WHITE" layoutX="99.0" layoutY="46.0" strikethrough="false" strokeType="OUTSIDE" strokeWidth="0.0" text="PC" underline="false">
+      <font>
+        <Font name="System Bold Italic" size="12.0" />
+      </font>
+    </Text>
+    <Text layoutX="625.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+    <Label fx:id="testik" layoutX="177.0" layoutY="52.0" text="Label" />
+  </children>
+  <padding>
+    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+  </padding>
+  <stylesheets>
+    <URL value="@../css/style.css" />
+  </stylesheets>
+</AnchorPane>
